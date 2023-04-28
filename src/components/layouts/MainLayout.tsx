@@ -1,20 +1,26 @@
-import React from 'react'
+import React from "react";
 
-import Header from '../header/Header'
-import Footer from '../footer/Footer'
+import Header from "../header/Header";
+import Footer from "../footer/Footer";
+
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
 
 interface Props {
-  children: React.ReactNode
+  children: React.ReactNode;
 }
 
-const MainLayout = ({children} : Props) => {
+const MainLayout = ({ children }: Props) => {
   return (
     <>
-      <Header/>
-      {children}
-      <Footer/> 
+      <Header />
+      <main className={`${inter.className}`}>
+        {children}
+      </main>
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default MainLayout
+export default MainLayout;
