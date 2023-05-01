@@ -11,3 +11,11 @@ export interface Programs {
   goals: string,
   impact: string
 }
+
+export interface Paths {
+  params: Params,
+}
+
+export interface Params {
+  id: string
+}

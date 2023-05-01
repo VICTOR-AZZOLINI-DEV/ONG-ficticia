@@ -14,6 +14,9 @@ module.exports = {
       },
       colors: {
         'gray-transparent': 'rgba(128, 128, 128, 0.4)'
+      },
+      screens: {
+        'vsm' : '320px'
       }
     },
   },

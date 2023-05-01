@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Props, Programs } from "../../interfaces";
 
+
 const ProgramsPage = ({ data }: Props) => {
   return (
     <section
